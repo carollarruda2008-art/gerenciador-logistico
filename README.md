@@ -8,7 +8,19 @@
 
 ## Sobre o projeto
 
-Aplicação web acadêmica para gerenciamento logístico. O sistema foi organizado para cadastrar produtos, endereços e transportadores, gerar fretes relacionando um transportador a vários produtos e consultar relatórios por data.
+Aplicação web acadêmica para gerenciamento logístico. O sistema contempla cadastros de produtos, endereços e transportadores, geração de fretes relacionando um transportador a vários produtos e consulta de relatórios por data.
+
+## Código-fonte completo
+
+O projeto está disponível no arquivo compactado [Gerenciador_Logistico_Projeto_GitHub.zip](./Gerenciador_Logistico_Projeto_GitHub.zip). **Baixe e extraia esse ZIP** para manter a estrutura de pastas necessária ao funcionamento dos arquivos PHP.
+
+O arquivo contém a pasta `gerenciador-logistico`, com:
+- `index.php` e módulos `produtos/`, `enderecos/`, `transportadores/`, `fretes/` e `relatorios/`;
+- configuração e conexão em `config/`;
+- componentes compartilhados em `includes/`;
+- recursos CSS e JavaScript em `assets/`;
+- `database.sql` e `database_dados_exemplo.sql`;
+- documentação de instalação, testes e apresentação em `documentacao/`.
 
 ## Tecnologias
 
@@ -19,7 +31,7 @@ Aplicação web acadêmica para gerenciamento logístico. O sistema foi organiza
 - PDO
 - XAMPP para execução local
 
-## Funcionalidades previstas
+## Funcionalidades
 
 - Painel inicial.
 - Cadastro, edição, listagem e exclusão de produtos.
@@ -29,25 +41,22 @@ Aplicação web acadêmica para gerenciamento logístico. O sistema foi organiza
 - Consulta dos fretes.
 - Relatório de fretes por data com exportação CSV.
 
-## Código-fonte
-
-O pacote do projeto será adicionado ao repositório como `gerenciador-logistico-fonte.zip`. Ele contém os arquivos PHP, CSS, JavaScript, o script SQL e a documentação de apoio.
-
 ## Como executar localmente
 
 1. Instale o XAMPP e inicie Apache e MySQL.
-2. Extraia o pacote do projeto.
-3. Copie a pasta `gerenciador-logistico` para `C:\\xampp\\htdocs\\`.
+2. Extraia `Gerenciador_Logistico_Projeto_GitHub.zip`.
+3. Copie a pasta `gerenciador-logistico` extraída para `C:\\xampp\\htdocs\\`.
 4. Abra o phpMyAdmin em `http://localhost/phpmyadmin`.
 5. Importe `database.sql`, que está dentro da pasta do projeto.
 6. Confira as configurações de conexão em `config/config.php`.
 7. Acesse `http://localhost/gerenciador-logistico/`.
 
+O arquivo `database_dados_exemplo.sql` contém registros fictícios opcionais para facilitar testes locais.
+
 ## Situação de validação
 
 Os arquivos PHP foram verificados quanto à sintaxe no ambiente de preparação. A conexão real com o banco de dados, os formulários, a geração de fretes e a exportação CSV ainda precisam ser testados no XAMPP local antes de considerar a aplicação validada.
 
-## Observação
+## Observações
 
-Esta é uma versão acadêmica inicial. Não há autenticação de usuários. Os dados de demonstração, quando utilizados, são fictícios e devem ser identificados como tais.
-
+Esta é uma versão acadêmica inicial e não inclui autenticação de usuários. Utilize apenas dados fictícios nos testes. Os dados pessoais acadêmicos não devem ser adicionados a dados operacionais ou exemplos públicos.
