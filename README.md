@@ -10,11 +10,7 @@
 
 Aplicação web acadêmica para gerenciamento logístico. O sistema foi organizado para cadastrar produtos, endereços e transportadores, gerar fretes relacionando um transportador a vários produtos e consultar relatórios por data.
 
-## Código-fonte
-
-O código-fonte completo está no arquivo [gerenciador-logistico-fonte.zip](./gerenciador-logistico-fonte.zip). Baixe e extraia o arquivo para acessar a pasta do projeto, incluindo os arquivos PHP, CSS, JavaScript, scripts SQL e documentação.
-
-## Tecnologias previstas
+## Tecnologias
 
 - PHP
 - MySQL/MariaDB
@@ -33,17 +29,19 @@ O código-fonte completo está no arquivo [gerenciador-logistico-fonte.zip](./ge
 - Consulta dos fretes.
 - Relatório de fretes por data com exportação CSV.
 
+## Código-fonte
+
+O pacote do projeto será adicionado ao repositório como `gerenciador-logistico-fonte.zip`. Ele contém os arquivos PHP, CSS, JavaScript, o script SQL e a documentação de apoio.
+
 ## Como executar localmente
 
 1. Instale o XAMPP e inicie Apache e MySQL.
-2. Extraia o código-fonte do arquivo ZIP.
+2. Extraia o pacote do projeto.
 3. Copie a pasta `gerenciador-logistico` para `C:\\xampp\\htdocs\\`.
 4. Abra o phpMyAdmin em `http://localhost/phpmyadmin`.
 5. Importe `database.sql`, que está dentro da pasta do projeto.
 6. Confira as configurações de conexão em `config/config.php`.
 7. Acesse `http://localhost/gerenciador-logistico/`.
-
-O arquivo `database_dados_exemplo.sql` contém registros fictícios opcionais para facilitar testes locais.
 
 ## Situação de validação
 
@@ -51,4 +49,5 @@ Os arquivos PHP foram verificados quanto à sintaxe no ambiente de preparação.
 
 ## Observação
 
-Este repositório faz parte de uma atividade acadêmica. Os dados de exemplo são fictícios. Não há autenticação de usuários na versão inicial.
+Esta é uma versão acadêmica inicial. Não há autenticação de usuários. Os dados de demonstração, quando utilizados, são fictícios e devem ser identificados como tais.
+
